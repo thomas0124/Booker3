@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -36,7 +37,7 @@
               </li>
               <li class="nav-item">
                 <%= link_to destroy_user_session_path, class: 'nav-link text-white', method: :delete do %>
-                  <i class="fas fa-sign-out-alt" aria-hidden="true"></i> Log out
+                  <i class="fas fa-sign-out-alt" aria-hidden="true"></i> logout
                 <% end %>
               </li>
             <% else %>
@@ -52,12 +53,12 @@
               </li>
               <li class="nav-item">
                 <%= link_to new_user_registration_path, class: 'nav-link text-white' do %>
-                  <i class="fas fa-user-plus" aria-hidden="true"></i> Sign up
+                  <i class="fas fa-user-plus" aria-hidden="true"></i> sign up
                 <% end %>
               </li>
               <li class="nav-item">
                 <%= link_to new_user_session_path, class: 'nav-link text-white' do %>
-                  <i class="fas fa-sign-in-alt" aria-hidden="true"></i> Log in
+                  <i class="fas fa-sign-in-alt" aria-hidden="true"></i> login
                 <% end %>
               </li>
             <% end %>
@@ -91,7 +92,7 @@
       <%= yield %>
     </main>
     <footer class="bg-dark text-white p-3 text-right">
-      © 2023 shimizu toma
+      © 2022 Yuki Watanabe
     </footer>
   </body>
 </html>
